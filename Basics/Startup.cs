@@ -1,4 +1,7 @@
 using Basics.AuthorizationRequirements;
+using Basics.Controllers;
+using Basics.CustomPolicyProvider;
+using Basics.Transformer;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basics", "Basics\Basics.csproj", "{5146CBF2-E2FC-420B-B877-915390DC4174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityExample", "WebApplication3\IdentityExample.csproj", "{1D16AE2A-254E-4E5C-BC4F-F298E334AFAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityExample", "WebApplication3\IdentityExample.csproj", "{1D16AE2A-254E-4E5C-BC4F-F298E334AFAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{EFF070AF-7047-41DE-8FF7-27BA37DF0993}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5146CBF2-E2FC-420B-B877-915390DC4174} = {EFF070AF-7047-41DE-8FF7-27BA37DF0993}
+		{1D16AE2A-254E-4E5C-BC4F-F298E334AFAE} = {EFF070AF-7047-41DE-8FF7-27BA37DF0993}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {320B6EA0-ABDA-4F98-A968-C0BCA1016F68}
