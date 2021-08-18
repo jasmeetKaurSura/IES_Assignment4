@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Api.AuthRequirement
 {
-    public class JwtRequirement : IAuthorizationRequirement { }
+    public class AuthRequirement : IAuthorizationRequirement { }
 
-    public class JwtRequirementHandler : AuthorizationHandler<JwtRequirement>
+    public class JwtRequirementHandler : AuthorizationHandler<AuthRequirement>
     {
         private readonly HttpClient _client;
         private readonly HttpContext _httpContext;
@@ -22,7 +22,7 @@ namespace Api.AuthRequirement
 
         protected override async Task HandleRequirementAsync(
             AuthorizationHandlerContext context,
-            JwtRequirement requirement)
+            AuthRequirement requirement)
         {
             if (_httpContext.Request.Headers.TryGetValue("Authorization", out var authHeader))
             {

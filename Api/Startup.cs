@@ -19,7 +19,7 @@ namespace Api
             {
                 var defaultAuthBuilder = new AuthorizationPolicyBuilder();
                 var defaultAuthPolicy = defaultAuthBuilder
-                    .AddRequirements(new JwtRequirement())
+                    .AddRequirements(new AuthRequirement.AuthRequirement())
                     .Build();
 
                 config.DefaultPolicy = defaultAuthPolicy;
@@ -48,8 +48,8 @@ namespace Api
 
             app.UseEndpoints(endpoints =>
             {
-                // endpoints.MapDefaultControllerRoute();
-                 endpoints.MapControllerRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapDefaultControllerRoute();
+
                
             });
         }
