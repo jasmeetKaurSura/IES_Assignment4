@@ -26,7 +26,7 @@ namespace Server.Controllers
             query.Add("redirectUri", redirect_uri);
             query.Add("state", state);
 
-            return View(model: query.ToString());
+            return View(model: query.ToString( ));
         }
 
         [HttpPost]
